@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport es la ventana del navegador, Width es ancho, device porque se ajusta a la pantalla del usuario -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Prácticas Macri</title>
+</head>
+<body> 
+  <h1 class="rojo" id="fondonegro">Prácticas de clases</h1>
+   <h2 class="rojo"> Demostración: Block vs Inline</h2>
+   <h2 class="azul">Elementos en Bloque</h2>
+   <div class="azul">Div - Elemento en Bloque</div> 
+   <p class="azul">Párrafo - Elemento en Bloque</p>
+   <h3 class="azul">H3 - Elemento en Bloque</h3>
+
+   <h2 class="verde">Elementos en Línea</h2>
+   <span class="verde">Span - Elemento en Línea</span>
+   <a class="verde" href="https://www.nucba.com.ar/" target="_blank">A(enlace) - Elemento en Línea</a>
+   <strong class="verde">Strong - Elemento en Línea</strong>
+
+   <h2 class="rojo" id="borde">Combinación de Elementos en Bloque y en Línea</h2>
+     <p class="azul">
+        Éste es un párrafo (bloque) con un <span class="verde">span(en línea)</span>, un <a class="verde" href="https://www.nucba.com.ar/" target="_blank">enlace (en linea) </a> y un <strong class="verde">texto fuerte o strong(en línea).</strong>
+     </p>
+  <h2>Imagen</h2>
+  <img src="https://media.tycsports.com/files/2020/08/19/113210/lautaro-martinez.jpg" width="450" height="300" alt="LAUTORO"> <br>
+  <h2>Agrupadores</h2>
+  <ul>
+    <li> Gato </li>
+    <li> Perro </li>
+    <li> Cobayo </li>
+  </ul>
+  <ol>
+    <li>Uno</li>
+    <li>Dos</li>
+    <li>Tres</li>
+  </ol>
+  <ol>
+    <li>Gato</li>
+       <ul><li>Pájaro</li></ul>
+    <li>Cobayo</li>
+    <li>Perro</li>
+  </ol>
+<h2>Tablas</h2>
+<table>
+  <tr>
+  <th>Lunes</th>
+  <th>Martes</th>
+  <th>Miércoles</th>
+  <th>Jueves</th>
+  <th>Viernes</th>
+  </tr>
+  <tr>
+  <td>9hs</td>
+  <td>10hs</td>
+  <td>11hs</td>
+  <td>12hs</td>
+  <td>13hs</td>
+  </tr>
+</table>
+<br>
+<table>
+  <tr>
+    <td><b>Curso</b></td>
+    <td><b>Horas</b></td>
+    <td><b>Horario</b></td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>20</td>
+    <td>16:00</td>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>20</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td>JS</td>
+    <td>60</td>
+    <td>19:00</td>
+  </tr>
+</table>
+<br>
+<h2>Challenge "Su Pedido"</h2>
+<table>
+  <tr>
+    <td><b>Nombre producto</b></td>
+    <td><b>Precio unitario</b></td>
+    <td><b>Unidades</b></td>
+    <td><b>Subtotal</b></td>
+  </tr>
+  <tr>
+    <td>Reproductor MP3 (80 GB)</td>
+    <td>192.02</td>
+    <td>1</td>
+    <td>192.92</td>
+  </tr>
+  <tr>
+    <td>Fundas de colores</td>
+    <td>2.50</td>
+    <td>5</td>
+    <td>12.50</td>
+  </tr>
+  <tr>
+    <td>Reproductor de radio & control remoto</td>
+    <td>12.99</td>
+    <td>1</td>
+    <td>12.99</td>
+  </tr>
+  <tr>
+    <td><b>TOTAL</b></td>
+    <td>-</td>
+    <td>7</td>
+    <td>207.51</td>
+  </tr>
+</table> 
+  <h2>Fusión de columnas</h2>
+<table>
+  <tr>
+    <td colspan="2"> Primera columna</td>
+  </tr>
+  <tr>
+    <td>Segunda columna</td>
+    <td>Tercera columna</td>
+  </tr>
+</table>
+<h2>Fusión de filas</h2>
+<table>
+   <tr>
+    <td>Primera columna</td>
+    <td rowspan="2">Segunda columna</td>
+  </tr>
+  <tr>
+    <td>Tercera columna</td>
+  </tr>
+</table>
+<br>
+<br>
+<h2><strong>Formularios</strong></h2>
+<form>
+  <label for="nombre">Nombre:</label>
+  <input id="nombre" type="text" placeholder="Ingrese su nombre">
+  <br/>
+  <br/>
+  <label for="apellido">Apellido:</label>
+  <input type="text" id="apellido" placeholder="Ingrese su apellido"/>
+  <br/>
+  <br/>
+  <label for="edad">Edad:</label>
+  <input id="edad" type="number" placeholder="Ingrese su edad"/>
+  <br/>
+  <br/>
+  <label for="nacimiento">Fecha de nacimiento:</label>
+  <input id="nacimiento" type="date" required/>
+  <br>
+  <br>
+  <label for="correo">Email:</label>
+  <input id="correo" type="email" placeholder="Ingrese su correo"/>
+  <br>
+  <br>
+  <label for="contraseña">Contraseña:</label>
+  <input id="contraseña" type="password" placeholder="Ingrese su contraseña"/>
+  <br>
+  <br>
+  <input type="checkbox" id="checkbox1"> <label for="checkbox1"> Acepto los términos y condiciones.</label>
+  <br>
+  <br>
+  Club simpatinzando:
+  <input type="radio" name="clubes" id="racingclub"/>
+  <label id="racingclub">Racing Club</label>
+  <input type="radio" name="clubes" id="boca"/>
+  <label id="boca">Boca</label>
+  <input type="radio" name="clubes" id="river"/>
+  <label id="river">River</label>
+  <input type="radio" name="clubes" id="sanlorenzo"/>
+  <label id="sanlorenzo">San Lorenzo</label>
+  <input type="radio" name="clubes" id="independiente"/>
+  <label id="independiente">Independiente</label>
+  <input type="radio" name="clubes" id="otro"/>
+  <label id="otro">Otro</label>
+  <br>
+  <br>
+  Juego:
+  <select>
+    <option value="papel">Papel</option>
+    <option value="piedra">Piedra</option>
+    <option value="tijera">Tijera</option>
+    <option value="bazooka">Bazooka</option>
+  </select>
+  <br>
+  <br>
+  <label for="opinion">Tu opinión:</label><br>
+  <textarea id="opinion" rows="8" cols="35" minlength="5" maxlength="300"></textarea>
+  <br>
+  <br>
+  <input type="submit" value="Enviar formulario">
+</form>
+</body>
+</html>
